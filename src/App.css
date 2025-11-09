@@ -1,0 +1,182 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes softFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+.fade-in {
+  opacity: 0;
+}
+
+.fade-in-up.is-visible {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in-down.is-visible {
+  animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.fade-in.is-visible {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.fade-delay-1 {
+  animation-delay: 0.15s;
+}
+
+.fade-delay-2 {
+  animation-delay: 0.3s;
+}
+
+.fade-delay-3 {
+  animation-delay: 0.45s;
+}
+
+.soft-float {
+  animation: softFloat 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up,
+  .fade-in-down,
+  .fade-in,
+  .soft-float {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-section {
+    padding: 3rem 1.25rem;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .features-section {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .features-grid {
+    gap: 1.5rem;
+  }
+
+  .devices-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+  }
+
+  .devices-section > div {
+    margin-right: 0;
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .devices-image {
+    width: min(100%, 320px);
+    height: auto;
+  }
+
+  .cta-section {
+    padding: 1.75rem 1.25rem;
+    border-radius: 1.5rem;
+  }
+
+  .cta-section button {
+    width: 100%;
+  }
+}
