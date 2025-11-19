@@ -86,21 +86,31 @@ const HomePage = () => {
         />
       </div>
 
-      <div
-        id="download"
-        className="cta-section fade-in-up fade-delay-3 flex flex-col items-center text-center mt-24 scroll-mt-32 w-full"
+      <section
+        id="waitlist"
+        className="waitlist-section fade-in-up fade-delay-3 flex flex-col items-center text-center mt-24 scroll-mt-32 lg:w-[900px] px-0 lg:px-6 -mx-6 sm:mx-0"
       >
-        <h2 className="text-4xl font-medium mb-10">OneFocus v1.0 is coming soon.</h2>
-        <p className="text-2xl font-normal" style={{ fontFamily }}>
-          Be the first to experience the cleanest productivity tool.
-        </p>
-        <Button
-          variant="default"
-          className="bg-black text-white hover:bg-neutral-800 mt-10"
-        >
-          Download (coming soon)
-        </Button>
-      </div>
+        <div className="waitlist-card w-full lg:max-w-5xl rounded-[36px] border border-black/5 bg-white/95 p-4 sm:p-10 lg:p-11 shadow-2xl shadow-black/15 backdrop-blur-md mx-0 lg:mx-auto">
+          <p className="text-sm sm:text-base uppercase tracking-[0.5em] text-neutral-500 mb-5 sm:mb-7" style={{ fontFamily }}>
+            Early Access
+          </p>
+          <h2 className="text-4xl sm:text-5xl font-semibold mb-5 sm:mb-8 leading-tight" style={{ fontFamily }}>
+            Join the OneFocus Waitlist
+          </h2>
+          <p className="text-lg sm:text-xl text-neutral-600 mb-7 sm:mb-12" style={{ fontFamily }}>
+            Sign up to get the latest updates and be the first to try the cleanest productivity suite.
+          </p>
+          <div className="rounded-3xl border border-neutral-200 bg-neutral-50/90 p-4 sm:p-6 shadow-inner">
+            <iframe
+              src="https://tally.so/r/9qqJ7E"
+              
+              frameBorder="0"
+              title="OneFocus Waitlist"
+              className="w-full rounded-[28px] bg-white h-[300px] sm:h-[400px] lg:h-[400px]"
+            />
+          </div>
+        </div>
+      </section>
     </section>
   )
 }
