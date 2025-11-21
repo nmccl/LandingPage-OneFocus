@@ -88,7 +88,7 @@ const HomePage = () => {
 
       <section
         id="waitlist"
-        className="waitlist-section fade-in-up fade-delay-3 flex flex-col items-center text-center mt-24 scroll-mt-32 lg:w-[900px] px-0 lg:px-6 -mx-6 sm:mx-0"
+        className="waitlist-section fade-in-up fade-delay-3 flex flex-col items-center text-center mt-20 scroll-mt-32 lg:w-[900px] px-0 lg:px-6 -mx-6 sm:mx-0"
       >
         <div className="waitlist-card w-full lg:max-w-5xl rounded-[36px] border border-black/5 bg-white/95 p-4 sm:p-10 lg:p-11 shadow-2xl shadow-black/15 backdrop-blur-md mx-0 lg:mx-auto">
           <p className="text-sm sm:text-base uppercase tracking-[0.5em] text-neutral-500 mb-5 sm:mb-7" style={{ fontFamily }}>
