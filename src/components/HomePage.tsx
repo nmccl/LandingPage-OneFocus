@@ -42,6 +42,10 @@ const faqs = [
     q: "What macOS and iOS versions are required?",
     a: "OneFocus requires macOS 26.2 or later, and iOS 26.2 or later. This app utilises Apple's latest frameworks and UI changes.",
   },
+  {
+    q: "If I have Do Not Disturb on, will I still get OneFocus notifications?",
+    a: "Yes, if you go to Settings → Focus → Do Not Disturb, you can add OneFocus to the list of apps allowed to send notifications.",
+  },
 ]
 
 const FaqItem = ({ q, a }: { q: string; a: string }) => {
