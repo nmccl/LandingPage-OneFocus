@@ -25,7 +25,7 @@ const TermsOfUse = () => {
       <Section title="License">
         <p>
           Subject to these Terms, Noah McClung ("we", "us") grants you a limited, non-exclusive,
-          non-transferable, revocable licence to download and use OneFocus on Apple devices that
+          non-transferable, revocable license to download and use OneFocus on Apple devices that
           you own or control, solely for your personal, non-commercial purposes.
         </p>
         <p>
@@ -57,7 +57,7 @@ const TermsOfUse = () => {
           <li>Violate any applicable law or regulation.</li>
           <li>Infringe the intellectual property rights of any third party.</li>
           <li>Transmit any malicious code, viruses, or harmful data.</li>
-          <li>Attempt to gain unauthorised access to our systems or other users' accounts.</li>
+          <li>Attempt to gain unauthorized access to our systems or other users' accounts.</li>
         </ul>
       </Section>
 
@@ -102,7 +102,7 @@ const TermsOfUse = () => {
       <Section title="Termination">
         <p>
           We reserve the right to suspend or terminate your access to OneFocus at any time, with
-          or without notice, if you violate these Terms. Upon termination, your licence to use the
+          or without notice, if you violate these Terms. Upon termination, your license to use the
           App will immediately cease.
         </p>
       </Section>
@@ -117,7 +117,7 @@ const TermsOfUse = () => {
 
       <Section title="Governing Law">
         <p>
-          These Terms are governed by the laws of the State of Tennessee, United States, without
+          These Terms are governed by the laws of the State of Nevada, United States, without
           regard to its conflict of law provisions.
         </p>
       </Section>

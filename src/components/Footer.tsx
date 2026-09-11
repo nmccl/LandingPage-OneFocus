@@ -34,7 +34,7 @@ const Footer = () => {
           <FaGithub />
         </a>
         <a
-          href="https://www.noahmcclung.com"
+          href="https://noahmcclung.com"
           aria-label="Noah McClung personal website"
           target="_blank"
           rel="noreferrer"

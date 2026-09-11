@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
         </p>
         <p>
           <strong className="text-neutral-800">Crash and diagnostic data.</strong> If you opt in
-          to sharing analytics with Apple, Apple may share anonymised crash reports with us through
+          to sharing analytics with Apple, Apple may share anonymized crash reports with us through
           App Store Connect. This data contains no personally identifiable information.
         </p>
       </Section>
@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
           </li>
           <li>
             <strong className="text-neutral-800">Apple</strong> — processes in-app purchases and
-            may share anonymised diagnostic data as described above.
+            may share anonymized diagnostic data as described above.
           </li>
           <li>
             <strong className="text-neutral-800">Legal requirements</strong> — we may disclose

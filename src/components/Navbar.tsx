@@ -8,7 +8,7 @@ interface NavItem {
   external?: boolean
 }
 
-const APP_STORE_URL = "https://apps.apple.com/app/onefocus/id000000000"
+//const APP_STORE_URL = "https://apps.apple.com/app/onefocus/id000000000"
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -57,12 +57,10 @@ const Navbar: React.FC = () => {
             )
           )}
           <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noreferrer"
+           
             className="bg-black text-white text-sm font-medium px-4 py-2 rounded-full hover:bg-neutral-800 transition-colors"
           >
-            Download
+           Coming Soon
           </a>
         </div>
 
@@ -101,12 +99,10 @@ const Navbar: React.FC = () => {
             )
           )}
           <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noreferrer"
+          
             className="block text-sm font-medium text-black hover:text-neutral-700 transition-colors"
           >
-            Download on the App Store →
+            Coming soon to the App Store
           </a>
         </div>
       )}

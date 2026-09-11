@@ -7,7 +7,7 @@ const fontFamily =
   '"SF Pro Display","SF Pro Text",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif'
 
 // App Store placeholder — replace with your real link once the app is live
-const APP_STORE_URL = "https://apps.apple.com/app/onefocus/id000000000"
+//const APP_STORE_URL = "https://apps.apple.com/app/onefocus/id000000000"
 
 const faqs = [
   {
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "What is included in OneFocus Pro?",
-    a: "Pro gives you unlimited focus sessions, tasks, notes, and clipboard history, plus custom themes, iCloud sync across all your devices, the menu bar widget, keyboard shortcuts, advanced statistics, and more.",
+    a: "Pro gives you unlimited focus sessions with custom durations, unlimited tasks with categories, unlimited notes and clipboard history, rich text notes with folders, clipboard favorites, full statistics and streak tracking, custom themes, account sync across devices, menu bar mode, and global keyboard shortcuts.",
   },
   {
     q: "How much does OneFocus Pro cost?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: "Can I use OneFocus on both my Mac and iPhone?",
-    a: "Yes. OneFocus is a universal purchase — one subscription covers both macOS and iOS. iCloud sync keeps everything in perfect sync across your devices automatically.",
+    a: "Yes. OneFocus is a universal purchase — one subscription covers both macOS and iOS. Account sync keeps everything in perfect sync across your devices automatically.",
   },
   {
     q: "How do I cancel my subscription?",
@@ -32,15 +32,15 @@ const faqs = [
   },
   {
     q: "Does OneFocus work offline?",
-    a: "Yes. All your data is stored locally first. iCloud sync runs in the background when you have a connection, so OneFocus is fully functional even without internet access.",
+    a: "Yes. All your data is stored locally first. Account sync runs in the background when you have a connection, so OneFocus is fully functional even without internet access.",
   },
   {
     q: "Is my data private?",
-    a: "Absolutely. Your notes, tasks, and clipboard history are stored on your device and synced only through your private iCloud account. We never have access to your data. See our Privacy Policy for full details.",
+    a: "Absolutely. Your notes, tasks, and clipboard history are stored on your device and synced only through your private account. We never have access to your data. See our Privacy Policy for full details.",
   },
   {
     q: "What macOS and iOS versions are required?",
-    a: "OneFocus requires macOS 26.2 or later, and iOS 26.2 or later. This app utilises Apple's latest frameworks and UI changes.",
+    a: "OneFocus requires macOS 26.0 or later, and iOS 26.0 or later. This app uses Apple's latest frameworks and UI changes.",
   },
   {
     q: "If I have Do Not Disturb on, will I still get OneFocus notifications?",
@@ -87,13 +87,14 @@ const HomePage = () => {
       <p className="text-2xl font-normal mt-5 fade-in-up" style={{ fontFamily }}>
         Simple tools for productivity, focus, and minimalism
       </p>
+      
 
-      <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+      <a > {/* href={APP_STORE_URL} target="_blank" rel="noreferrer"*/}
         <Button
           variant="default"
           className="bg-black text-white hover:bg-neutral-800 mt-8 fade-in-up fade-delay-1"
         >
-          Download on the App Store
+          Coming soon to the App Store
         </Button>
       </a>
 
@@ -109,7 +110,7 @@ const HomePage = () => {
             <ClipboardList className="w-7 h-7 text-black flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-lg font-medium mb-1">Smart Tasks</h3>
-              <p className="text-neutral-600 text-sm">Capture, prioritise, and track what matters — with reminders, drag-and-drop ordering, and recurring tasks.</p>
+              <p className="text-neutral-600 text-sm">Capture, prioritize, and track what matters — with reminders, drag-and-drop ordering, and recurring tasks.</p>
             </div>
           </div>
 
@@ -117,7 +118,7 @@ const HomePage = () => {
             <Clock className="w-7 h-7 text-black flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-lg font-medium mb-1">Focus Sessions</h3>
-              <p className="text-neutral-600 text-sm">Stay in flow with a customisable focus timer. Track streaks, view session history, and see your productivity trends over time.</p>
+              <p className="text-neutral-600 text-sm">Stay in flow with a customizable focus timer. Track streaks, view session history, and see your productivity trends over time.</p>
             </div>
           </div>
 
@@ -133,14 +134,14 @@ const HomePage = () => {
             <StickyNote className="w-7 h-7 text-black flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-lg font-medium mb-1">Quick Notes</h3>
-              <p className="text-neutral-600 text-sm">Rich-text notes with a global hotkey or menu bar widget. Write fast, find faster.</p>
+              <p className="text-neutral-600 text-sm">Rich-text notes with a global hotkey or menu bar mode. Write fast, find faster.</p>
             </div>
           </div>
 
           <div className="flex items-start space-x-4 fade-in-up fade-delay-1">
             <Cloud className="w-7 h-7 text-black flex-shrink-0 mt-1" />
             <div>
-              <h3 className="text-lg font-medium mb-1">iCloud Sync</h3>
+              <h3 className="text-lg font-medium mb-1">Account Sync</h3>
               <p className="text-neutral-600 text-sm">Your tasks, notes, and focus history stay perfectly in sync across your Mac and iPhone — automatically.</p>
             </div>
           </div>
@@ -186,9 +187,9 @@ const HomePage = () => {
                 </li>
               ))}
             </ul>
-            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+            <a target="_blank" rel="noreferrer">
               <Button variant="outline" className="mt-8 w-full border-neutral-300 text-neutral-800 hover:bg-neutral-50">
-                Download Free
+                Coming Soon
               </Button>
             </a>
           </div>
@@ -204,15 +205,14 @@ const HomePage = () => {
             <ul className="space-y-3 text-sm text-neutral-300">
               {[
                 "Everything in Free",
-                "Unlimited tasks, notes & clipboard",
-                "Unlimited focus sessions",
-                "iCloud sync across Mac & iPhone",
-                "Menu bar widget",
-                "Custom themes & Liquid Glass",
-                "Advanced statistics & streaks",
-                "Keyboard shortcuts",
-                "Data export",
-                "Priority support",
+                "Unlimited focus sessions & custom durations",
+                "Unlimited tasks with categories",
+                "Unlimited notes & clipboard history",
+                "Clipboard favorites",
+                "Full statistics & streak tracking",
+                "Custom themes",
+                "Account sync across devices",
+                "Menu bar mode & global keyboard shortcuts",
               ].map((f) => (
                 <li key={f} className="flex items-center gap-3">
                   <Check className="w-4 h-4 text-white flex-shrink-0" />
@@ -220,7 +220,7 @@ const HomePage = () => {
                 </li>
               ))}
             </ul>
-            <a href={APP_STORE_URL} target="_blank" rel="noreferrer">
+            <a target="_blank" rel="noreferrer">
               <Button className="mt-8 w-full bg-white text-black hover:bg-neutral-100">
                 Try Free for 7 Days
               </Button>
